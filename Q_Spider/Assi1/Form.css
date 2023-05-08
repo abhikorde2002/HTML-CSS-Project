@@ -1,79 +1,69 @@
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
-body {
-    background-color: gray;
+body{
+    background-color: rgb(202, 153, 212);
 }
-
-.container {
+.container{
     max-width: 900px;
     margin: 0 auto;
 }
 
-.apply_section {
+.about_section{
     max-width: 600px;
     background-color: white;
     padding: 20px;
     margin: 0 auto;
     margin-top: 50px;
-    box-shadow: 4px 3px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 4px 3px 5px rgba(0, 0, 0, 1);
     border-radius: 10px;
 }
-
-.title_small {
+.title_small{
     font-size: 20px;
 }
-
-.form_container {
+.form_container{
     margin-top: 20px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-
+    grid-template-columns:repeat(auto-fit, minmax(200px, 1fr));
     gap: 20px;
 }
-
-.form_control {
+.form_content{
     display: flex;
     flex-direction: column;
 }
-
-label {
+label{
     font-size: 15px;
     margin-bottom: 5px;
 }
 
-input,
-select,
-textarea {
+input,select,textarea{
     padding: 6px 10px;
-    border: 1px solid #ccc;
+    border:1px solid #ccc;
     border-radius: 4px;
     font-size: 15px;
 }
-
-input:focus {
+input:focus{
     outline-color: red;
 }
 
-.button_container {
+.button_container{
     display: flex;
     justify-content: flex-end;
     margin-top: 20px;
-}
 
-button {
+}
+button{
     background-color: aqua;
     border: transparent solid 2px;
     padding: 5px 10px;
-    color: white;
+    color:white;
     border-radius: 8px;
     transition: 0.3s ease-in;
 }
 
-button:hover {
+button:hover{
     background-color: #ccc;
     border: 2px solid red;
     color: black;
@@ -81,17 +71,16 @@ button:hover {
     cursor: pointer;
 }
 
-
-.textarea_control {
+.text_content {
     grid-column: 1/span 2;
 }
 
-.textarea_control textarea {
+.text_content textarea {
     width: 100%;
 }
 
 @media (max-width:460px) {
-    .textarea_control {
+    .text_content {
         grid-column: 1/span 1;
     }
 }
